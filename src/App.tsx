@@ -1,7 +1,39 @@
+import { Lightning } from "phosphor-react";
+import About from "./components/About";
+import Benefits from "./components/Benefits";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Modules from "./components/Modules";
+import Start from "./components/Start";
+import Ticket from "./components/Ticket";
+
 export default () => {
+
+  document.documentElement.scrollTop = 0;
+
   return(
-    <div className="w-full h-screen bg-[#121214]">
-      <h1 className="text-zinc-100">Olá mundo</h1>
+    <div>
+      <div className="flex-1 h-14 flex items-center justify-center gradient">
+        <strong className="flex items-center justify-center gap-2 text-zinc-100">
+          Aproveite a promoção de lançamento que irá durar até o dia 28/02 
+          
+          <Lightning size={20} weight="bold"/>
+        </strong>
+      </div>
+
+      <Header/>
+      <Start/>
+
+      <div className="relative">
+        <Ticket/>
+      </div>
+
+      <Benefits/>
+      <Modules/>
+      <About/>
+      <FAQ/>
+      <Footer/>
     </div>
   );
 }
