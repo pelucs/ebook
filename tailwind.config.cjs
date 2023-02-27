@@ -7,8 +7,8 @@ module.exports = {
         sans: "Poppins, sans-serif"
       },
       backgroundImage: {
-        bgY: "url('./src/assets/bg-y.jpg')",
-        bgX: "url('./src/assets/bg-x.jpg')"
+        bgY: "url('./public/bg-y.jpg')",
+        bgX: "url('./public/bg-x.jpg')"
       },
       colors: {
         green: {
