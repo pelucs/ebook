@@ -3,8 +3,8 @@ import logo from '../assets/logotipo.svg';
 export default () => {
   return(
     <div className="py-4 flex flex-col md:flex-row items-center justify-between px-14 bg-green-primary
-     text-zinc-100">
-      <h1>
+     text-zinc-100 text-sm md:text-base">
+      <h1 className="text-center">
         &copy;2023 - Todos os direitos reservados
       </h1>
 

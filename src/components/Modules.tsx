@@ -55,7 +55,7 @@ export default () => {
         ))}
       </div>
 
-      <a href="#" className="mt-14 w-full md:w-[220px] py-2 rounded-md bg-green-700 text-zinc-100 
+      <a href="#" className="mt-14 w-full md:w-[220px] py-3 rounded-md bg-green-700 text-zinc-100 
       text-center shadow-md">
         Começar a estudar
       </a>
