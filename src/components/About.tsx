@@ -2,7 +2,7 @@ import ebook from '../assets/ebook.png';
 
 export default () => {
   return(
-    <div id="sobre" className="p-14 grid grid-cols-2 gap-10">
+    <div id="sobre" className="px-6 md:px-14 py-14 grid grid-cols-1 md:grid-cols-2 gap-10">
       <div className="flex flex-col justify-center">
         <h1 className="font-bold text-4xl text-green-primary">
           Criadores do <span className="text-browm-primary">ebook</span>

@@ -28,12 +28,12 @@ const cards: Array<{ icon: string, title: string, desc: string }>  = [
 
 export default () => {
   return(
-    <div id="beneficios" className="px-14 flex flex-col items-center">
+    <div id="beneficios" className="px-6 md:px-14 flex flex-col items-center">
       <h1 className="mt-14 font-bold text-3xl">
         Benefícios que você terá 
       </h1>
       
-      <div className="mt-14 flex items-center justify-between gap-10">
+      <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10">
         {cards.map(card => (
           <div key={card.title} className="p-5 max-w-sm w-full bg-zinc-100 shadow-md rounded-md
           flex flex-col gap-3">

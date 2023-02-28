@@ -29,9 +29,9 @@ const methodsPayment: Array<{ icon: string, title: string }> = [
 
 export default () => {
   return(
-    <div className="flex">
-      <div className="flex-1 pt-32 pb-5 px-14 min-h-screen">
-        <h1 className="text-4xl text-green-primary font-bold">
+    <div className="flex flex-col md:flex-row">
+      <div className="flex-1 pt-16 md:pt-32 pb-5 px-6 md:px-14 md:min-h-screen">
+        <h1 className="text-5xl text-green-primary font-bold">
           Lorem ipsum <span className="text-browm-primary">dolor</span> sit amet <span className="text-browm-primary">consectetur</span>
         </h1>
 
@@ -50,7 +50,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="max-w-[632px] pt-32 px-14 w-full min-h-screen bg-bgY bg-cover bg-center">
+      <div className="md:max-w-[632px] pt-16 pb-16 md:pb-0 md:pt-32 px-6 md:px-14 w-full md:min-h-screen bg-bgY bg-cover bg-center">
         <div className="flex items-center gap-5">
           <div className="py-3 px-5 rounded-md text-zinc-100 uppercase bg-browm-secundary
           text-xl font-bold">
@@ -76,7 +76,7 @@ export default () => {
           </div>
         </div>
 
-        <div className="mt-5 grid grid-cols-4 gap-3">
+        <div className="mt-5 grid grid-cols-4 gap-1 md:gap-3">
           {methodsPayment.map(item => (
             <div key={item.title} className="px-3 py-2 rounded-md bg-browm-secundary text-zinc-100
             text-sm flex items-center gap-2">

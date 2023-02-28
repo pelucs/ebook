@@ -33,12 +33,12 @@ const modules: Array<{ id: number, title: string, desc: string }> = [
 
 export default () => {
   return(
-    <div id="modulos" className="w-full mt-20 px-14 py-14 flex flex-col items-center bg-bgX bg-cover">
+    <div id="modulos" className="w-full mt-20 px-6 md:px-14 py-14 flex flex-col items-center bg-bgX bg-cover">
       <h1 className="font-bold text-3xl text-zinc-100">
         Conheça os módulos 
       </h1>
 
-      <div className="mt-14 grid grid-cols-3 gap-5">
+      <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5">
         {modules.map(module => (
           <div key={module.id} className="flex items-center">
             <div className="flex flex-col items-center justify-center font-bold text-zinc-100
@@ -47,7 +47,7 @@ export default () => {
               <strong className="text-5xl">0{module.id}</strong>
             </div>
 
-            <div className="py-3 px-4 bg-zinc-100 rounded-tr-xl rounded-br-xl">
+            <div className="h-full px-4 bg-zinc-100 rounded-tr-xl rounded-br-xl flex flex-col justify-center">
               <h1 className="text-lg font-bold">{module.title}</h1>
               <p className="text-sm">{module.desc}</p>
             </div>

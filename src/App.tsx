@@ -14,7 +14,7 @@ export default () => {
 
   return(
     <div>
-      <div className="flex-1 h-14 flex items-center justify-center gradient">
+      <div className="flex-1 py-4 flex items-center justify-center gradient text-center text-sm md:text-base">
         <strong className="flex items-center justify-center gap-2 text-zinc-100">
           Aproveite a promoção de lançamento que irá durar até o dia 28/02 
           

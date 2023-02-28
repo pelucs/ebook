@@ -16,9 +16,9 @@ html, body{
 }
 
 *::-webkit-scrollbar-track{
-  @apply w-2 bg-green-primary;
+  @apply w-2 bg-browm-primary;
 }
 
 *::-webkit-scrollbar-thumb{
-  @apply w-2 bg-green-secundary rounded-full;
+  @apply w-2 bg-green-secundary;
 }

@@ -27,7 +27,7 @@ const faq: Array<{ id: number, title: string, desc: string }> = [
 export default () => {
 
   return(
-    <div id="faq" className="h-full bg-white px-14 py-14 pb-24 flex flex-col items-center">
+    <div id="faq" className="h-full bg-white px-6 md:px-14 py-14 pb-24 flex flex-col items-center">
       <h1 className="font-bold text-3xl">
         Perguntas mais frequentes
       </h1>
@@ -37,7 +37,8 @@ export default () => {
           <Accordion.Item value={`item-${item.id}`} key={item.id} className="overflow-hidden accordion-item">
             <Accordion.Header>
               <Accordion.Trigger className="w-full h-20 flex items-center justify-between border-b 
-              border-zinc-300 text-xl font-bold hover:text-green-primary transition-colors accordion-trigger">
+              border-zinc-300 text-xl font-bold hover:text-green-primary transition-colors accordion-trigger
+              text-left">
                 {item.title}
 
                 <CaretDown weight="bold" size={30} className="accordion-chevron" aria-hidden />

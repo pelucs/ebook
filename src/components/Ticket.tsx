@@ -3,7 +3,7 @@ import DialogTicket from "./DialogTicket";
 export default () => {
   return(
     <div className="w-full px-14 h-16 bg-gradient-to-tr from-green-secundary to-green-primary
-    flex items-center justify-between text-zinc-100 font-bold text-lg">
+    hidden md:flex items-center justify-between text-zinc-100 font-bold text-lg">
       <h1>
         Novo por aqui?
       </h1>
