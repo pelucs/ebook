@@ -7,8 +7,8 @@ module.exports = {
         sans: "Poppins, sans-serif"
       },
       backgroundImage: {
-        bgY: "url('./public/bg-y.jpg')",
-        bgX: "url('./public/bg-x.jpg')"
+        bgY: "url(/public/bg-y.jpg)",
+        bgX: "url(/public/bg-x.jpg)"
       },
       colors: {
         green: {
@@ -19,6 +19,9 @@ module.exports = {
           primary: "#987039",
           secundary: "#714B18"
         }
+      },
+      screens: {
+        md: "840px"
       }
     },
   },

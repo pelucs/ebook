@@ -34,7 +34,7 @@ const modules: Array<{ id: number, title: string, desc: string }> = [
 export default () => {
   return(
     <div id="modulos" className="w-full mt-20 px-6 md:px-14 py-14 flex flex-col items-center bg-bgX bg-cover">
-      <h1 className="font-bold text-3xl text-zinc-100">
+      <h1 className="font-bold text-3xl text-zinc-100 text-center">
         Conheça os módulos 
       </h1>
 
@@ -55,9 +55,10 @@ export default () => {
         ))}
       </div>
 
-      <button className="mt-14 text-zinc-100">
+      <a href="#" className="mt-14 w-full md:w-[220px] py-2 rounded-md bg-green-700 text-zinc-100 
+      text-center shadow-md">
         Começar a estudar
-      </button>
+      </a>
     </div>
   );
 }

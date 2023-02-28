@@ -1,6 +1,7 @@
 import { Lightning } from "phosphor-react";
 import About from "./components/About";
 import Benefits from "./components/Benefits";
+import CountDowm from "./components/CountDowm";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -15,10 +16,10 @@ export default () => {
   return(
     <div>
       <div className="flex-1 py-4 flex items-center justify-center gradient text-center text-sm md:text-base">
-        <strong className="flex items-center justify-center gap-2 text-zinc-100">
-          Aproveite a promoção de lançamento que irá durar até o dia 28/02 
+        <strong className="flex flex-col md:flex-row items-center justify-center gap-2 text-zinc-100">
+          Promoção de lançamento acaba em 
           
-          <Lightning size={20} weight="bold"/>
+          <CountDowm/>
         </strong>
       </div>
 

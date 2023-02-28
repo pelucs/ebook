@@ -28,7 +28,7 @@ export default () => {
 
   return(
     <div id="faq" className="h-full bg-white px-6 md:px-14 py-14 pb-24 flex flex-col items-center">
-      <h1 className="font-bold text-3xl">
+      <h1 className="font-bold text-3xl text-center">
         Perguntas mais frequentes
       </h1>
 
@@ -37,15 +37,17 @@ export default () => {
           <Accordion.Item value={`item-${item.id}`} key={item.id} className="overflow-hidden accordion-item">
             <Accordion.Header>
               <Accordion.Trigger className="w-full h-20 flex items-center justify-between border-b 
-              border-zinc-300 text-xl font-bold hover:text-green-primary transition-colors accordion-trigger
+              border-zinc-300 text-base md:text-xl font-bold hover:text-green-primary transition-colors accordion-trigger
               text-left">
-                {item.title}
+                <h1 className="w-full max-w-md md:max-w-2xl">
+                  {item.title}
+                </h1>
 
-                <CaretDown weight="bold" size={30} className="accordion-chevron" aria-hidden />
+                <CaretDown weight="bold" size={30} className="accordion-chevron"/>
               </Accordion.Trigger>
             </Accordion.Header>
 
-            <Accordion.Content className="text-xl text-zinc-500 accordion-content border-b
+            <Accordion.Content className="text-base md:text-xl text-zinc-500 accordion-content border-b
             border-zinc-300 bg-zinc-200/50">
               <div className="p-4">
                 {item.desc}
