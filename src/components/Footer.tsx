@@ -1,4 +1,4 @@
-import logo from '../assets/logotipo.svg';
+import logopl from '../assets/logotipo-plucs.svg';
 
 export default () => {
   return(
@@ -16,7 +16,7 @@ export default () => {
           target="_blank"
           className="relative -top-1"
         >
-          <img src={logo} className="w-[80px]"/>
+          <img src={logopl} className="w-[80px]"/>
         </a>
       </h1>
     </div>

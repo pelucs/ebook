@@ -1,6 +1,7 @@
 import { ArrowDown } from "phosphor-react";
 import ButtonBuy from "./ButtonBuy";
 
+import logotipo from '../assets/logotipo-insideagro.svg';
 import video from '../assets/video/video.mp4';
 
 import pix from '../assets/icons/pix.svg';
@@ -31,12 +32,12 @@ export default () => {
   return(
     <div className="flex flex-col md:flex-row">
       <div className="flex-1 pt-10 md:pt-32 pb-5 px-6 md:px-14 md:min-h-screen">
-        <h1 className="text-5xl text-green-primary font-bold">
-          Lorem ipsum <span className="text-browm-primary">dolor</span> sit amet <span className="text-browm-primary">consectetur</span>
+        <h1 className="text-6xl text-green-primary font-bold">
+          <img src={logotipo} alt="Logo InsideAgro"/>
         </h1>
 
-        <p className="mt-5 text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit magni libero voluptatibus.
+        <p className="mt-2 text-2xl">
+          Por dentro de informativos e estratégias financeiras voltadas para o agronegócio.
         </p>
 
         <a href="#sobre" className="mt-5 flex items-center gap-2 hover:text-green-primary transition-colors">
