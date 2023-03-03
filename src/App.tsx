@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Modules from "./components/Modules";
 import Start from "./components/Start";
 import Ticket from "./components/Ticket";
+import ConfigScrollReveal from "./scrollanimation/ConfigScrollReveal";
 
 export default () => {
 
@@ -15,14 +16,20 @@ export default () => {
 
   return(
     <div>
-      <div className="flex-1 py-4 flex items-center justify-center gradient text-center text-sm md:text-base">
-        <strong className="flex flex-col md:flex-row items-center justify-center gap-2 text-zinc-100">
-          Promoção de lançamento acaba em 
-          
-          <CountDowm/>
-        </strong>
-      </div>
-
+        <ConfigScrollReveal
+          delay={150} 
+          duration={1000}
+          distance={100}
+        >
+        <div className="flex-1 py-4 flex items-center justify-center gradient text-center text-sm md:text-base">
+          <strong className="flex flex-col md:flex-row items-center justify-center gap-2 text-zinc-100">
+            Promoção de lançamento acaba em 
+            
+            <CountDowm/>
+          </strong>
+        </div>
+      </ConfigScrollReveal>
+      
       <Header/>
       <Start/>
 
