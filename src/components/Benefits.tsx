@@ -50,7 +50,7 @@ export default () => {
         styles="mt-14 grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10"
       >
         {cards.map(card => (
-          <div key={card.title} className="p-5 max-w-sm w-full bg-zinc-100 shadow-md rounded-md
+          <div key={card.title} className="px-5 pt-5 pb-10 max-w-sm w-full bg-zinc-100 shadow-md rounded-md
           flex flex-col gap-3">
             <img src={card.icon} alt={card.title} className="w-14"/>
 

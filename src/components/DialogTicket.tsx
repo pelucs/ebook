@@ -22,7 +22,7 @@ export default () => {
   return(
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger className="underline font-bold text-lg text-zinc-100">
-        Saiba mais
+        Ler mais
       </Dialog.Trigger>
 
       <Dialog.Portal className="">

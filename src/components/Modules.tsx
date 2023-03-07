@@ -3,12 +3,12 @@ import ConfigScrollReveal from "../scrollanimation/ConfigScrollReveal";
 const modules: Array<{ id: number, title: string, desc: string }> = [
   {
     id: 1,
-    title: "Lorem ipsum dolor",
+    title: "Gestão de custos",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
   },
   {
     id: 2,
-    title: "Lorem ipsum dolor",
+    title: "Vaca louca",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
   },
   {

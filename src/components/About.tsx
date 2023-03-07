@@ -1,4 +1,4 @@
-import ebook from '../assets/ebook.png';
+import ebook from '../assets/ebook.svg';
 import ConfigScrollReveal from '../scrollanimation/ConfigScrollReveal';
 
 export default () => {
