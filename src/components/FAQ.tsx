@@ -6,21 +6,21 @@ const faq: Array<{ id: number, title: string, desc: string }> = [
   {
     id: 1,
     title: "É um curso com vídeo aula?",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo inventore aliquam sunt atque voluptatibus, illum deleniti, quaerat doloremque excepturi sint eum dignissimos sequi quae quidem facilis ad aut dicta!"
+    desc: "Não! o InsideAgro é um ebook, um material em pdf que reúne estratégias e informativos do mundo agropecuário."
   },
   {
     id: 2,
     title: "Se comprar agora eu tenho acesso a futuras atualizações?",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo inventore aliquam sunt atque voluptatibus, illum deleniti, quaerat doloremque excepturi sint eum dignissimos sequi quae quidem facilis ad aut dicta!"
+    desc: "O acesso é vitalício, você terá acesso para sempre e com direito a receber as atualizações sem precisar pagar nada."
   },
   {
     id: 3,
     title: "Por onde eu acesso o meu ebook depois da compra?",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo inventore aliquam sunt atque voluptatibus, illum deleniti, quaerat doloremque excepturi sint eum dignissimos sequi quae quidem facilis ad aut dicta!"
+    desc: "Você irá receber o acesso do ebook por email. Mas para acessar as atualizações é preciso acessar a plataforma da Hotmart com o email que realizou a compra."
   },
   {
     id: 4,
-    title: "Como funciona o termo de garantia?",
+    title: "Como funciona o termo de reembolso?",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo inventore aliquam sunt atque voluptatibus, illum deleniti, quaerat doloremque excepturi sint eum dignissimos sequi quae quidem facilis ad aut dicta!"
   },
 ];

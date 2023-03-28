@@ -4,32 +4,37 @@ const modules: Array<{ id: number, title: string, desc: string }> = [
   {
     id: 1,
     title: "Gestão de custos",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    desc: "Aprenda passo a passo de como ter uma gestão de custo em sua propriedade rural."
   },
   {
     id: 2,
-    title: "Vaca louca",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    title: "Administração de finanças",
+    desc: "Tenha em mente as vantagens de possuir um gerenciamento em sua propriedade rural."
   },
   {
     id: 3,
-    title: "Lorem ipsum dolor",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    title: "Lucratividade",
+    desc: "Descubra as melhores atividades que podem trazer lucro para dentro de sua propriedade rural."
   },
   {
     id: 4,
-    title: "Lorem ipsum dolor",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    title: "Vaca louca",
+    desc: "Saiba mais sobre o que é a doença da vaca louca e como prevenir a propagação desse mal."
   },
   {
     id: 5,
-    title: "Lorem ipsum dolor",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    title: "Antes da porteira, dentro da porteira, depois da porteira",
+    desc: "Saiba mais sobre a cadeia do agronegócio, o que está dentro e fora de sua propriedade rural."
   },
   {
     id: 6,
-    title: "Lorem ipsum dolor",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    title: "Agricultura digital no Brasil",
+    desc: "Confira os resultados de ter uma propriedade rural com recursos digitais."
+  },
+  {
+    id: 7,
+    title: "Benefícios da palma forrageira",
+    desc: "Descubra as vantagens em trabalhar com a palma forrageira, as inúmeras áreas comerciais em que ela se encaixa."
   },
 ];
 
@@ -51,17 +56,17 @@ export default () => {
           duration={1500}
           distance={100}
       >
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 justify-self-center self-center gap-5">
           {modules.map(module => (
-            <div key={module.id} className="flex items-center">
-              <div className="flex flex-col items-center justify-center font-bold text-zinc-100
-              bg-browm-primary rounded-tl-xl rounded-bl-xl w-full max-w-[110px] h-[110px] p-4">
+            <div key={module.id} className="flex min-h-[110px] items-center rounded-xl overflow-hidden">
+              <div className="h-full flex flex-col items-center justify-center font-bold text-zinc-100
+              bg-browm-primary w-full max-w-[110px] p-4">
                 <h1 className="text-sm">Módulo</h1>
                 <strong className="text-5xl">0{module.id}</strong>
               </div>
 
-              <div className="h-full px-4 bg-zinc-100 rounded-tr-xl rounded-br-xl flex flex-col justify-center">
-                <h1 className="text-lg font-bold">{module.title}</h1>
+              <div className="h-full py-3 px-4 bg-zinc-100 rounded-tr-xl rounded-br-xl flex flex-col justify-center">
+                <h1 className="text-lg font-bold leading-tight">{module.title}</h1>
                 <p className="text-sm">{module.desc}</p>
               </div>
             </div>

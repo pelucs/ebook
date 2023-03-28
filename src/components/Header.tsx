@@ -32,9 +32,7 @@ export default () => {
           <a 
             href={`#${item.path}`} 
             key={item.value}
-            className="font-bold after:content-[''] after:block after:w-0 hover:after:w-full after:h-[2px] 
-            after:bg-gradient-to-r after:from-transparent after:to-green-primary after:rounded-full
-            after:transition-all hover:text-green-primary after:duration-500 after:delay-150"
+            className="link"
           >
             {item.value}
           </a>

@@ -21,10 +21,9 @@ export default () => {
           duration={1000}
           distance={100}
         >
-        <div className="flex-1 py-4 flex items-center justify-center gradient text-center text-sm md:text-base">
+        <div className="flex-1 py-4 flex items-center justify-center gradient text-center text-sm 
+        md:text-base sticky top-0">
           <strong className="flex flex-col md:flex-row items-center justify-center gap-2 text-zinc-100">
-            Promoção de lançamento acaba em 
-            
             <CountDowm/>
           </strong>
         </div>
@@ -33,9 +32,9 @@ export default () => {
       <Header/>
       <Start/>
 
-      <div className="relative">
+      {/* <div className="relative">
         <Ticket/>
-      </div>
+      </div> */}
 
       <Benefits/>
       <Modules/>

@@ -11,22 +11,22 @@ const cards: Array<{ icon: string, title: string, desc: string }>  = [
   {
     icon: clock,
     title: "Acesso vitalício",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    desc: "Compre agora e tenha acesso ao material para sempre com direito a atualizações."
   },
   {
     icon: book,
     title: "6 módulos",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    desc: "Inicialmente, o material contém 6 módulos, porém, você terá acesso a novas atualizações que iremos adicionando ao decorrer do tempo."
   },
   {
     icon: retur,
     title: "7 dias de garantia",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    desc: "Você tem 7 dias de garantia, direito a reembolso sem taxa alguma."
   },
   {
     icon: headset,
-    title: "Acesso a consultoria",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus rutrum."
+    title: "Acesso a monitoria",
+    desc: "Ao comprar o ebook, no material, você terá acesso ao contato da monitoria, no qual você poderá tirar dúvidas."
   },
 ];
 

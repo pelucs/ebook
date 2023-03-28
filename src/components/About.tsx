@@ -11,7 +11,7 @@ export default () => {
           distance={100}
         >
           <h1 className="font-bold text-4xl text-green-primary">
-            Criadores do <span className="text-browm-primary">ebook</span>
+            Sobre o <span className="text-browm-primary">ebook</span>
           </h1>
         </ConfigScrollReveal>
 
@@ -21,12 +21,15 @@ export default () => {
           distance={100}
         >
           <p className="text-zinc-500 mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est amet optio excepturi temporibus
-            voluptates error culpa molestias sint deleniti distinctio, veritatis beatae doloribus veniam 
-            eaque, saepe enim? Nisi, hic totam. Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Totam eligendi molestiae ipsum, consequuntur non quis in dignissimos maxime 
-            praesentium placeat dolores mollitia ipsa saepe consequatur nulla nostrum architecto 
-            voluptatibus iusto.
+            O ebook foi criado com intenção de agrupar estratégias 
+            financeiras e informativos do ramo agropecuário em um só 
+            material, tendo em vista que atualmente, na internet, existem 
+            muitas informações vagas e grande parte das vezes essas 
+            informações são tomadas de fake news. Esse material foi 
+            desenvolvido com um grande comprometimento
+            de Germínia Souza, gestora em agronegócio e gerente de
+            marketing digital e por Pedro Lucas, designer gráfico e 
+            desenvolvedor web front-end. 
           </p>
         </ConfigScrollReveal>
       </div>

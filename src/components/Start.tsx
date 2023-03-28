@@ -1,15 +1,14 @@
-import { ArrowDown } from "phosphor-react";
+import { FacebookLogo, InstagramLogo, WarningOctagon } from "phosphor-react";
 
 import ButtonBuy from "./ButtonBuy";
 
 import logotipo from '../assets/logotipo-insideagro.svg';
-import video from '../assets/video/video.mp4';
 
 import pix from '../assets/icons/pix.svg';
 import code from '../assets/icons/code.svg';
-import paypal from '../assets/icons/paypal.svg';
 import card from '../assets/icons/card.svg';
 import ConfigScrollReveal from "../scrollanimation/ConfigScrollReveal";
+import Video from "./Video";
 
 const methodsPayment: Array<{ icon: string, title: string }> = [
   {
@@ -23,11 +22,7 @@ const methodsPayment: Array<{ icon: string, title: string }> = [
   {
     icon: card,
     title: "Crédito"
-  },
-  {
-    icon: paypal,
-    title: "Paypal"
-  },
+  }
 ];
 
 export default () => {
@@ -58,11 +53,31 @@ export default () => {
           duration={1500}
           distance={100}
         >
-          <a href="#sobre" className="mt-5 flex items-center gap-2 hover:text-green-primary transition-colors">
-            Saiba mais 
+          <div className="mt-5">            
+            <div className="mt-5 flex items-center gap-5">
+              <a 
+                target="_blank" 
+                href="https://www.instagram.com/insideagro/"
+                className="flex items-center gap-2 rounded py-3 px-4 bg-gradient-to-r from-green-primary
+                to-green-secundary text-zinc-100"
+              >
+                <InstagramLogo size={25}/>
 
-            <ArrowDown size={16} className="animate-bounce" weight="bold"/>
-          </a>
+                Instagram
+              </a>
+
+              <a 
+                target="_blank" 
+                href="https://www.instagram.com/insideagro/"
+                className="flex items-center gap-2 rounded py-3 px-4 bg-gradient-to-r from-green-primary
+                to-green-secundary text-zinc-100"
+              >
+                <FacebookLogo size={25}/>
+
+                Facebook
+              </a>
+            </div>
+          </div>
         </ConfigScrollReveal>
 
         <ConfigScrollReveal
@@ -70,9 +85,7 @@ export default () => {
           duration={1500}
           distance={100}
         >
-          <div className="w-full mt-5">
-            <video src={video} autoPlay className="rounded-2xl w-full"/>
-          </div>
+          <Video/>
         </ConfigScrollReveal>
 
       </div>
@@ -137,9 +150,12 @@ export default () => {
           duration={1000}
           distance={100}
         >
-          <strong className="mt-5 block text-zinc-100">
-            Ao realizar o pagamento, o ebook chegará automaticamente no seu endereço de email cadastrado.
-          </strong>
+          <div className="mt-5 p-3 px-4 bg-browm-secundary rounded-md text-zinc-100">
+            <strong>
+              Ao realizar o pagamento, o ebook chegará automaticamente no seu endereço de email 
+              cadastrado no ato da compra.
+            </strong>
+          </div>
         </ConfigScrollReveal>
       </div>
     </div>

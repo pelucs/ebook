@@ -11,6 +11,13 @@ html, body{
   hover:opacity-75 transition-opacity focus:outline-2 outline-offset-2 outline-green-primary;
 }
 
+.link {
+  @apply relative font-bold after:content-[''] after:block after:w-0 hover:after:w-full after:h-[2px] 
+  after:bg-gradient-to-r after:from-transparent after:to-green-primary after:rounded-full
+  after:transition-all hover:text-green-primary after:duration-500 after:delay-150
+  after:absolute after:right-0 hover:after:left-0
+}
+
 *::-webkit-scrollbar{
   @apply w-2;
 }
