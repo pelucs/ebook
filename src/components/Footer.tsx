@@ -9,7 +9,7 @@ export default () => {
       </h1>
 
       <h1 className="flex items-center gap-2">
-        Desenvolvido com ♡ por 
+        Desenvolvido por 
 
         <a 
           href="#"

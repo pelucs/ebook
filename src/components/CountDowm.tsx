@@ -7,7 +7,7 @@ export default () => {
 
   useEffect(() => {
 
-    let countDownDate = new Date('Mar 7, 2023, 23:59:99').getTime(); //DATA DA CONTAGEM REGRESSIVA
+    let countDownDate = new Date('Apr 7, 2023 23:59:99').getTime(); //DATA DA CONTAGEM REGRESSIVA
 
     setInterval(() => {
 
@@ -31,10 +31,10 @@ export default () => {
 
   const formatDate = (days: number, hours: number, minutes: number, seconds: number) => {
 
-    let dayF = days <= 9 ? `0${days}` : days,
-        hoursF = hours <= 9 ? `0${hours}` : hours,
-        minutesF = minutes <= 9 ? `0${minutes}` : minutes,
-        secondsF = seconds <= 9 ? `0${seconds}` : seconds;
+    let dayF = days <= 9 ? `0${days}` : `${days}`,
+        hoursF = hours <= 9 ? `0${hours}` : `${hours}`,
+        minutesF = minutes <= 9 ? `0${minutes}` : `${minutes}`,
+        secondsF = seconds <= 9 ? `0${seconds}` : `${seconds}`;
 
     setDate(`Promoção de lançamento acaba em ${dayF}d ${hoursF}h ${minutesF}m ${secondsF}s`);
   }
