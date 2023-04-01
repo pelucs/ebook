@@ -1,5 +1,6 @@
 import { FacebookLogo, InstagramLogo, WarningOctagon } from "phosphor-react";
 
+import ConfigScrollReveal from "../scrollanimation/ConfigScrollReveal";
 import ButtonBuy from "./ButtonBuy";
 
 import logotipo from '../assets/logotipo-insideagro.svg';
@@ -7,7 +8,7 @@ import logotipo from '../assets/logotipo-insideagro.svg';
 import pix from '../assets/icons/pix.svg';
 import code from '../assets/icons/code.svg';
 import card from '../assets/icons/card.svg';
-import ConfigScrollReveal from "../scrollanimation/ConfigScrollReveal";
+import illustration from '../assets/ilustration.png';
 import Video from "./Video";
 
 const methodsPayment: Array<{ icon: string, title: string }> = [
@@ -52,31 +53,22 @@ export default () => {
           delay={350} 
           duration={1500}
           distance={100}
-        >
-          <div className="mt-5">            
-            <div className="mt-5 flex items-center gap-5">
-              <a 
-                target="_blank" 
-                href="https://www.instagram.com/insideagro/"
-                className="flex items-center gap-2 rounded py-3 px-4 bg-gradient-to-r from-green-primary
-                to-green-secundary text-zinc-100"
-              >
-                <InstagramLogo size={25}/>
+        >          
+          <div className="mt-5 flex flex-col gap-3">
+            <h1>
+              Nos siga no instagram!
+            </h1>
 
-                Instagram
-              </a>
+            <a 
+              target="_blank" 
+              href="https://www.instagram.com/insideagro/"
+              className="w-full max-w-[160px] flex items-center gap-2 rounded py-3 px-4 bg-gradient-to-r 
+              from-green-primary to-green-secundary text-zinc-100"
+            >
+              <InstagramLogo size={25}/>
 
-              <a 
-                target="_blank" 
-                href="https://www.instagram.com/insideagro/"
-                className="flex items-center gap-2 rounded py-3 px-4 bg-gradient-to-r from-green-primary
-                to-green-secundary text-zinc-100"
-              >
-                <FacebookLogo size={25}/>
-
-                Facebook
-              </a>
-            </div>
+              Instagram
+            </a>
           </div>
         </ConfigScrollReveal>
 
@@ -85,7 +77,9 @@ export default () => {
           duration={1500}
           distance={100}
         >
-          <Video/>
+          <div className="w-full flex items-center justify-center">
+            <img src={illustration} className="w-full max-w-sm"/>
+          </div>
         </ConfigScrollReveal>
 
       </div>
@@ -99,7 +93,7 @@ export default () => {
           <div className="flex items-center gap-5">
               <div className="py-2 px-4 rounded-md text-zinc-100 uppercase bg-browm-secundary
               text-xl font-bold">
-                70% off
+                40% off
               </div>
 
             <h1 className="text-xl font-bold text-zinc-100">
@@ -119,7 +113,7 @@ export default () => {
             </h1>
 
             <strong className="text-6xl font-bold text-zinc-100">
-              R$14,90
+              R$19,90
             </strong>
 
             <div className="mt-5">
@@ -157,6 +151,19 @@ export default () => {
             </strong>
           </div>
         </ConfigScrollReveal>
+
+        {/* <ConfigScrollReveal
+          delay={450} 
+          duration={1000}
+          distance={100}
+        >
+          <div className="mt-5 p-3 px-4 bg-browm-secundary rounded-md text-zinc-100">
+            <strong>
+              O seu acesso será vitalício e terá direito a atualizações, basta entrar novamente na plataforma
+              de compra e acessar sua conta. 
+            </strong>
+          </div>
+        </ConfigScrollReveal> */}
       </div>
     </div>
   );

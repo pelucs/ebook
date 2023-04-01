@@ -21,7 +21,7 @@ const faq: Array<{ id: number, title: string, desc: string }> = [
   {
     id: 4,
     title: "Como funciona o termo de reembolso?",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo inventore aliquam sunt atque voluptatibus, illum deleniti, quaerat doloremque excepturi sint eum dignissimos sequi quae quidem facilis ad aut dicta!"
+    desc: "Para solicitar o reembolso de alguma compra, é necessário que ela esteja dentro do prazo de solicitação de reembolso que é de 7 dias após a compra. Você pode verificar este prazo nas informações do produto, na área Minhas compras."
   },
 ];
 

@@ -1,13 +1,14 @@
-import { Lightning } from "phosphor-react";
+import { Hourglass, HourglassSimple, Lightning, Timer } from "phosphor-react";
 import { useEffect, useState } from "react";
 
 export default () => {
 
   const [date, setDate] = useState<string>("Promoção acaba em 00d 00h 00m 00s");
+  const [expired, setExpired] = useState<boolean>(false);
 
   useEffect(() => {
 
-    let countDownDate = new Date('Apr 7, 2023 23:59:99').getTime(); //DATA DA CONTAGEM REGRESSIVA
+    let countDownDate = new Date('Apr 4, 2023 18:47').getTime(); //DATA DA CONTAGEM REGRESSIVA
 
     setInterval(() => {
 
@@ -22,7 +23,7 @@ export default () => {
       formatDate(days, hours, minutes, seconds);
 
       if(distance < 0){
-        setDate("Promoção de lançamento EXPIRADA");
+        setExpired(true);
       }
 
     }, 1000);
@@ -36,12 +37,20 @@ export default () => {
         minutesF = minutes <= 9 ? `0${minutes}` : `${minutes}`,
         secondsF = seconds <= 9 ? `0${seconds}` : `${seconds}`;
 
-    setDate(`Promoção de lançamento acaba em ${dayF}d ${hoursF}h ${minutesF}m ${secondsF}s`);
+    setDate(`${dayF}d ${hoursF}h ${minutesF}m ${secondsF}s`);
   }
 
   return(
-    <span className="text-xl flex items-center gap-2">
-      {date} <Lightning size={20} weight="bold"/>
-    </span>
+    <div>
+      {expired ? (
+        <span className="text-xl flex items-center gap-2">
+          Promoção de lançamento expirada!
+        </span>
+      ) : (
+        <span className="text-base md:text-xl flex items-center gap-2">
+          Promoção de lançamento acaba em <br className="block md:hidden"/> {date} &#x1F557;
+        </span>
+      )}
+    </div>
   );
 }

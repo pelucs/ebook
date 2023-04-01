@@ -15,7 +15,7 @@ const cards: Array<{ icon: string, title: string, desc: string }>  = [
   },
   {
     icon: book,
-    title: "6 módulos",
+    title: "7 módulos",
     desc: "Inicialmente, o material contém 6 módulos, porém, você terá acesso a novas atualizações que iremos adicionando ao decorrer do tempo."
   },
   {

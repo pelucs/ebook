@@ -74,7 +74,9 @@ export default () => {
         </div>
       </ConfigScrollReveal>
 
-      <a href="#" className="mt-14 w-full md:w-[220px] py-3 rounded-md bg-green-700 text-zinc-100 
+      <a     
+      href="https://pay.hotmart.com/X81427295D?checkoutMode=10" 
+      className="mt-14 w-full md:w-[220px] py-3 rounded-md bg-green-700 text-zinc-100 
       text-center shadow-md">
         Começar a estudar
       </a>
