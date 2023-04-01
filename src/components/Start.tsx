@@ -77,7 +77,7 @@ export default () => {
           duration={1500}
           distance={100}
         >
-          <div className="w-full flex items-center justify-center">
+          <div className="py-5 md:p-0 w-full flex items-center justify-center">
             <img src={illustration} className="w-full max-w-sm"/>
           </div>
         </ConfigScrollReveal>
@@ -151,19 +151,6 @@ export default () => {
             </strong>
           </div>
         </ConfigScrollReveal>
-
-        {/* <ConfigScrollReveal
-          delay={450} 
-          duration={1000}
-          distance={100}
-        >
-          <div className="mt-5 p-3 px-4 bg-browm-secundary rounded-md text-zinc-100">
-            <strong>
-              O seu acesso será vitalício e terá direito a atualizações, basta entrar novamente na plataforma
-              de compra e acessar sua conta. 
-            </strong>
-          </div>
-        </ConfigScrollReveal> */}
       </div>
     </div>
   );

@@ -16,12 +16,12 @@ const cards: Array<{ icon: string, title: string, desc: string }>  = [
   {
     icon: book,
     title: "7 módulos",
-    desc: "Inicialmente, o material contém 6 módulos, porém, você terá acesso a novas atualizações que iremos adicionando ao decorrer do tempo."
+    desc: "Inicialmente, o material contém 7 módulos possuindo estratégias financeiras asim como informativos importantes."
   },
   {
     icon: retur,
-    title: "7 dias de garantia",
-    desc: "Você tem 7 dias de garantia, direito a reembolso sem taxa alguma."
+    title: "Novos módulos",
+    desc: "Você terá direito a novas atualizações, tais como; novos módulos e acrescentamento de conteúdo."
   },
   {
     icon: headset,

@@ -1,9 +1,8 @@
-import { Hourglass, HourglassSimple, Lightning, Timer } from "phosphor-react";
 import { useEffect, useState } from "react";
 
 export default () => {
 
-  const [date, setDate] = useState<string>("Promoção acaba em 00d 00h 00m 00s");
+  const [date, setDate] = useState<string>("00d 00h 00m 00s");
   const [expired, setExpired] = useState<boolean>(false);
 
   useEffect(() => {
