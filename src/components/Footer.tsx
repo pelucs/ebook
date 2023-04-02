@@ -12,7 +12,7 @@ export default () => {
         Desenvolvido por 
 
         <a 
-          href="#"
+          href="https://pelucs.com"
           target="_blank"
           className="relative -top-1"
         >
