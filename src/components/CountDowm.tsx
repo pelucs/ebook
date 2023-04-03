@@ -7,7 +7,7 @@ export default () => {
 
   useEffect(() => {
 
-    let countDownDate = new Date('Apr 4, 2023 18:47').getTime(); //DATA DA CONTAGEM REGRESSIVA
+    let countDownDate = new Date('Apr 10, 2023 23:59:99').getTime(); //DATA DA CONTAGEM REGRESSIVA
 
     setInterval(() => {
 
