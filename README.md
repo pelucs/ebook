@@ -1,13 +1,6 @@
-
 # InsideAgro
 
 InsideAgro é uma plataforma de venda de um ebook voltado para produtores rurais.
-
-
-
-
-
-
 
 
 ## Stack utilizada
