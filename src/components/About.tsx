@@ -28,8 +28,7 @@ export default () => {
             informações são tomadas de fake news. Esse material foi 
             desenvolvido com um grande comprometimento
             de Germínia Souza, gestora em agronegócio e gerente de
-            marketing digital e por Pedro Lucas, designer gráfico e 
-            desenvolvedor web front-end. 
+            marketing digital. 
           </p>
         </ConfigScrollReveal>
       </div>
